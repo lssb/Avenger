@@ -108,7 +108,7 @@ export default {
     getDouban: function () {
       this.status = 2
       let vm = this
-      this.$jsonp('http://api.douban.com/v2/movie/search?q=' + this.InputName)
+      this.$jsonp('https://api.douban.com/v2/movie/search?q=' + this.InputName)
         .then(function (response) {
           console.log(response)
           if (response.total > 0) {
